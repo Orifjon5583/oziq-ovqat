@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloqa - Mazzali.uz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header qismi o'zgarishsiz qoladi -->
+    <header class="sayt-boshi">
+        <div class="konteyner">
+            <a href="index.html" class="logo">Mazzali.uz</a>
+            <nav class="menyu">
+                <ul>
+                    <li><a href="index.html">Bosh Sahifa</a></li>
+                    <li><a href="taomlar.html">Taomlar</a></li>
+                    <li><a href="haqimizda.html">Biz haqimizda</a></li>
+                    <li><a href="aloqa.html" class="aktiv">Aloqa</a></li>
+                    <li>
+                        <a href="savat.html" class="savat-ikonka">
+                            🛒 <span class="savat-soni" id="savat-soni">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Asosiy qism (Main) - YANGILANGAN -->
+    <main>
+        <div class="konteyner">
+            <h2 class="sahifa-sarlavhasi">Biz Bilan Bog'laning</h2>
+
+            <div class="aloqa-konteyneri">
+                <!-- Chap taraf: Aloqa ma'lumotlari -->
+                <div class="aloqa-malumotlari">
+                    <h3>Bizning rekvizitlar</h3>
+                    <div class="aloqa-elementi">
+                        <div class="ikonka">📞</div>
+                        <p><strong>Telefon raqam:</strong> <span>+998 (99) 123-45-67</span></p>
+                    </div>
+                    <div class="aloqa-elementi">
+                        <div class="ikonka">✉️</div>
+                        <p><strong>Elektron pochta:</strong> <span>info@mazzali.uz</span></p>
+                    </div>
+                    <div class="aloqa-elementi">
+                        <div class="ikonka">📍</div>
+                        <p><strong>Manzil:</strong> <span>Toshkent shahri, Mustaqillik ko'chasi, 1-uy</span></p>
+                    </div>
+                    <div class="aloqa-elementi">
+                        <div class="ikonka">🕒</div>
+                        <p><strong>Ish vaqti:</strong> <span>Har kuni, 10:00 - 23:00</span></p>
+                    </div>
+                </div>
+
+                <!-- O'ng taraf: Qayta aloqa formasi -->
+                <div class="aloqa-formasi">
+                    <h3>Xabar yuborish</h3>
+                    <form id="xabar-yuborish-formasi">
+                        <div class="forma-gruppa">
+                            <label for="aloqa-ism">Ismingiz</label>
+                            <input type="text" id="aloqa-ism" placeholder="Ismingizni kiriting" required>
+                        </div>
+                        <div class="forma-gruppa">
+                            <label for="aloqa-email">Email yoki Telefon</label>
+                            <input type="text" id="aloqa-email" placeholder="Siz bilan bog'lanish uchun" required>
+                        </div>
+                        <div class="forma-gruppa">
+                            <label for="aloqa-xabar">Xabaringiz</label>
+                            <textarea id="aloqa-xabar" placeholder="Savol yoki taklifingizni shu yerga yozing..." required></textarea>
+                        </div>
+                        <button type="submit" class="buyurtma-tugmasi yuborish-tugmasi">Xabarni Yuborish</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Xarita bloki -->
+            <div class="xarita-bloki">
+                <!-- O'z manzilingizni Google Maps'dan topib, "Share" -> "Embed a map" orqali iframe kodini oling -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.333857329524!2d69.2810984153835!3d41.32328247927005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b3d8c1e2f3f%3A0x9c8d8b8c8d8b8c8!2sMustaqillik%20Maydoni!5e0!3m2!1sen!2s!4v1671234567890!5m2!1sen!2s" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer qismi o'zgarishsiz qoladi -->
+    <footer class="sayt-quyi-qismi">
+        <div class="konteyner">
+            <p>&copy; 2025 Mazzali.uz. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript'ga kichik qo'shimcha qilamiz -->
+    <script src="script.js"></script>
+</body>
+</html>

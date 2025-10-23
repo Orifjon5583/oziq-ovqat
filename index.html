@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazzali Taomlar - Bosh Sahifa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header qismi o'zgarishsiz qoladi -->
+    <header class="sayt-boshi">
+        <div class="konteyner">
+            <a href="index.html" class="logo">Mazzali.uz</a>
+            <nav class="menyu">
+                <ul>
+                    <li><a href="index.html">Bosh Sahifa</a></li>
+                    <li><a href="taomlar.html">Taomlar</a></li>
+                    <li><a href="haqimizda.html">Biz haqimizda</a></li>
+                    <li><a href="aloqa.html">Aloqa</a></li>
+                    <li>
+                        <a href="savat.html" class="savat-ikonka">
+                            🛒 <span class="savat-soni" id="savat-soni">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Asosiy qism (Main) - YANGILANGAN -->
+    <main>
+        <!-- 1. Bosh ekran bo'limi (o'zgarishsiz) -->
+        <section class="bosh-sahifa-bolimi">
+            <div class="konteyner">
+                <h1>Eng Mazali Taomlarni Uyingizga Yetkazamiz!</h1>
+                <p>O'zbek milliy va dunyo taomlarining keng tanlovi</p>
+                <a href="taomlar.html" class="buyurtma-tugmasi">Taomlarni Ko'rish</a>
+            </div>
+        </section>
+
+        <!-- 2. "Nega Aynan Biz?" bo'limi (YANGI) -->
+        <section class="bolim afzalliklar-bolimi">
+            <div class="konteyner">
+                <h2 class="bolim-sarlavhasi">Nega Aynan Biz?</h2>
+                <div class="afzalliklar-royxati">
+                    <div class="afzallik-qutisi">
+                        <div class="ikonka">🚀</div>
+                        <h3>Tez Yetkazish</h3>
+                        <p>Buyurtmangizni 45 daqiqa ichida issiq holda yetkazib beramiz.</p>
+                    </div>
+                    <div class="afzallik-qutisi">
+                        <div class="ikonka">🌿</div>
+                        <h3>Yanggi Mahsulotlar</h3>
+                        <p>Taomlarimiz faqat eng sara va tabiiy mahsulotlardan tayyorlanadi.</p>
+                    </div>
+                    <div class="afzallik-qutisi">
+                        <div class="ikonka">💳</div>
+                        <h3>Qulay To'lov</h3>
+                        <p>Naqd pul, terminal yoki Click/Payme orqali to'lov qiling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. "Ommabop Taomlar" bo'limi (YANGI) -->
+        <section class="bolim">
+            <div class="konteyner">
+                <h2 class="bolim-sarlavhasi">Eng Ommabop Taomlar</h2>
+                <div class="mahsulotlar-royxati">
+                    <!-- Bu yerga eng mashhur 3 ta taomni qo'yamiz. taomlar.html'dan nusxa olamiz -->
+                    <div class="mahsulot-kartasi" data-id="1" data-nom="Margarita Pitsasi" data-narx="65000">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=2881&auto-format&fit=crop" alt="Pitsa">
+                        <h3>Margarita Pitsasi</h3>
+                        <p class="narx">65,000 so'm</p>
+                      <button class="savatga-qoshish"><a href="taomlar.html">Savatga qo'shish</a></button>
+                    </div>
+                    <div class="mahsulot-kartasi" data-id="2" data-nom="Gretsiya Salati" data-narx="35000">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=2787&auto-format&fit=crop" alt="Salat">
+                        <h3>Gretsiya Salati</h3>
+                        <p class="narx">35,000 so'm</p>
+                       <button class="savatga-qoshish"><a href="taomlar.html">Savatga qo'shish</a></button>
+                    </div>
+                    <div class="mahsulot-kartasi" data-id="3" data-nom="Shirinlik (Desert)" data-narx="25000">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=2880&auto-format&fit=crop" alt="Desert">
+                        <h3>Shirinlik (Desert)</h3>
+                        <p class="narx">25,000 so'm</p>
+                        <button class="savatga-qoshish"><a href="taomlar.html">Savatga qo'shish</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. "Mijozlar Fikri" bo'limi (YANGI) -->
+        <section class="bolim fikrlar-bolimi">
+            <div class="konteyner">
+                <h2 class="bolim-sarlavhasi">Mijozlarimiz Biz Haqimizda</h2>
+                <div class="fikrlar-royxati">
+                    <div class="fikr-kartasi">
+                        <p class="fikr-matni">"Yetkazib berish juda tez ekan. Taomlar ham issiq va juda mazali. Rahmat!"</p>
+                        <p class="mijoz-ismi">- Anvar aka</p>
+                    </div>
+                    <div class="fikr-kartasi">
+                        <p class="fikr-matni">"Birinchi marta buyurtma berishim. Pitsa menga juda yoqdi. Endi doim sizlardan olaman."</p>
+                        <p class="mijoz-ismi">- Laziza</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer qismi o'zgarishsiz qoladi -->
+    <footer class="sayt-quyi-qismi">
+        <div class="konteyner">
+            <p>&copy; 2025 Mazzali.uz. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript fayli o'zgarishsiz qoladi, chunki u barcha sahifalarda ishlaydi -->
+    <script src="script.js"></script>
+</body>
+</html>

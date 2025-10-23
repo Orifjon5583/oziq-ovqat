@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizning Savatingiz - Mazzali.uz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="sayt-boshi">
+        <div class="konteyner">
+            <a href="#" class="logo">Mazzali.uz</a>
+            <nav class="menyu">
+                <ul>
+                    
+                    <li><a href="index.html">Bosh Sahifa</a></li>
+                    <li><a href="taomlar.html">Taomlar</a></li>
+                    <li><a href="haqimizda.html">Biz haqimizda</a></li>
+                    <li><a href="aloqa.html">Aloqa</a></li>
+                    <li>
+                        <a href="savat.html" class="savat-ikonka">
+                            🛒 <span class="savat-soni" id="savat-soni">0</span>
+                        </a>
+                    </li>
+                
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="konteyner">
+            <h2 class="sahifa-sarlavhasi">Sizning Savatingiz</h2>
+
+            <div id="savat-mazmuni">
+                <!-- JavaScript bu yerga savat jadvalini chizadi -->
+            </div>
+
+            <div id="rasmiylashtirish-tugma-konteyneri">
+                <!-- JavaScript bu yerga "Rasmiylashtirishga o'tish" tugmasini qo'yadi -->
+            </div>
+
+            <div id="savat-bosh-xabar" style="display: none;">
+                <p>Hozircha savatingiz bo'sh.</p>
+                <a href="taomlar.html" class="buyurtma-tugmasi" style="margin-top: 20px;">Menyuni ko'rish</a>
+            </div>
+
+            <div class="buyurtma-formasi-bolimi" id="buyurtma-formasi" style="display: none;">
+                <h3>Yetkazib berish ma'lumotlari</h3>
+                <form id="buyurtma-yuborish-formasi">
+                    <div class="forma-gruppa">
+                        <label for="ism">Ismingiz</label>
+                        <input type="text" id="ism" placeholder="To'liq ismingizni kiriting" required>
+                    </div>
+                    <div class="forma-gruppa">
+                        <label for="telefon">Telefon raqam</label>
+                        <input type="tel" id="telefon" placeholder="+998 XX XXX XX XX" required>
+                    </div>
+                    <div class="forma-gruppa">
+                        <label for="manzil">Yetkazib berish manzili</label>
+                        <input type="text" id="manzil" placeholder="Shahar, tuman, ko'cha, uy..." required>
+                    </div>
+                    <button type="submit" class="buyurtma-tugmasi" style="width: 100%;">Buyurtmani Tasdiqlash</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="sayt-quyi-qismi">
+        <div class="konteyner">
+            <p>&copy; 2025 Mazzali.uz. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

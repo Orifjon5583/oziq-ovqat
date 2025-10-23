@@ -1,0 +1,548 @@
+/* umumiy-uslublar.css */
+/* style.css faylining eng boshi */
+
+/* Asosiy sozlamalar */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    color: #333;
+
+    /* === ORQA FON UCHUN YANGI KODLAR === */
+
+    /* 1. Orqa fonga rasm qo'yish */
+     
+
+    /* 2. Rasm butun ekranni qoplashi uchun */
+    background-size: cover;
+
+    /* 3. Sahifa aylantirilganda fon QO'ZG'ALMASLIGI uchun */
+    background-attachment: fixed;
+
+    /* 4. Rasm takrorlanmasligi uchun */
+    background-repeat: no-repeat;
+
+    /* 5. Rasm markazda turishi uchun */
+    background-position: center center;
+
+    /* Eski fon rangini qoldiramiz, rasm yuklanmaganda ko'rinib turadi */
+    background-color: #f7f7f7; 
+}
+a{
+     text-decoration: none;
+    color: #ccc;
+}
+.konteyner {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Sayt boshi (Header) uslublari */
+.sayt-boshi {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.sayt-boshi .konteyner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.menyu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menyu ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.menyu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menyu a:hover {
+    color: #ff6347;
+}
+
+/* Savat ikonka uslubi */
+.savat-ikonka {
+    position: relative;
+    font-size: 24px; /* Ikonka o'lchami */
+}
+.savat-soni {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* Bosh sahifa bo'limi uslublari */
+.bosh-sahifa-bolimi {
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2940&auto=format&fit=crop') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.bosh-sahifa-bolimi h1 { font-size: 48px; margin-bottom: 20px; }
+.bosh-sahifa-bolimi p { font-size: 20px; margin-bottom: 30px; }
+
+.buyurtma-tugmasi {
+    background-color: #ff6347; color: #fff; padding: 15px 30px;
+    text-decoration: none; border-radius: 5px; font-size: 18px;
+    transition: background-color 0.3s;
+}
+.buyurtma-tugmasi:hover { background-color: #e5533d; }
+
+/* Umumiy sahifa sarlavhasi */
+.sahifa-sarlavhasi {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+/* Mahsulotlar (taomlar.html) */
+.mahsulotlar-royxati {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.mahsulot-kartasi {
+    background-color: #fff; border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px; padding: 20px; text-align: center;
+    transition: transform 0.3s;
+}
+.mahsulot-kartasi:hover { transform: translateY(-10px); }
+.mahsulot-kartasi img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+.mahsulot-kartasi h3 { font-size: 22px; margin: 15px 0; }
+.mahsulot-kartasi .narx { font-size: 20px; font-weight: bold; color: #ff6347; margin-bottom: 20px; }
+.savatga-qoshish {
+    background-color: #333; color: #fff; border: none; padding: 12px 25px;
+    border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;
+}
+.savatga-qoshish:hover { background-color: #555; }
+
+/* Savat sahifasi (savat.html) */
+.savat-jadvali {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.savat-jadvali th, .savat-jadvali td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.savat-jadvali th { background-color: #f2f2f2; }
+.ochirish-tugmasi {
+    background-color: #e74c3c; color: white; border: none;
+    padding: 8px 12px; border-radius: 5px; cursor: pointer;
+}
+.umumiy-narx-qutisi {
+    margin-top: 30px; text-align: right; font-size: 22px; font-weight: bold;
+}
+.rasmiylashtirish-tugmasi {
+    background-color: #2ecc71; color: white; padding: 15px 30px;
+    text-decoration: none; border-radius: 5px; font-size: 18px;
+    display: inline-block; margin-top: 20px;
+}
+
+
+/* Oddiy matnli sahifalar uchun (haqimizda, aloqa) */
+.matnli-kontent {
+    padding: 40px 0;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.matnli-kontent p { margin-bottom: 20px; }
+.matnli-kontent ul { list-style-type: none; padding: 0; }
+.matnli-kontent ul li { margin-bottom: 10px; font-weight: bold; }
+
+
+/* Sayt quyi qismi (Footer) */
+.sayt-quyi-qismi {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+/* === BOSH SAHIFAGA QO'SHIMCHA USLUBLAR === */
+
+/* Umumiy bo'lim uslubi */
+.bolim {
+    padding: 60px 0;
+    text-align: center;
+}
+.bolim-sarlavhasi {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* 1. "Nega Aynan Biz?" bo'limi uslublari */
+.afzalliklar-bolimi {
+    background-color: #fff;
+}
+.afzalliklar-royxati {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+.afzallik-qutisi {
+    max-width: 300px;
+}
+.afzallik-qutisi .ikonka {
+    font-size: 50px;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+.afzallik-qutisi h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.afzallik-qutisi p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* 2. "Ommabop Taomlar" bo'limi (taomlar.html'dagi uslublardan foydalanadi) */
+/* Maxsus uslublar kerak emas, mavjud .mahsulotlar-royxati'dan foydalanamiz */
+
+
+/* 3. "Mijozlar Fikri" bo'limi uslublari */
+.fikrlar-bolimi {
+    background-color: #f2f2f2;
+}
+.fikrlar-royxati {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.fikr-kartasi {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    max-width: 320px;
+    text-align: left;
+}
+.fikr-kartasi .fikr-matni {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid #ff6347;
+}
+.fikr-kartasi .mijoz-ismi {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+}
+/* === SAYTNI TAKOMILLASHTIRISH UCHUN YANGI USLUBLAR === */
+
+/* Toifalar (Kategoriya) uslublari - taomlar.html */
+.toifalar-menyusi {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.toifa-tugmasi {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.toifa-tugmasi:hover {
+    background-color: #ddd;
+}
+.toifa-tugmasi.aktiv {
+    background-color: #ff6347;
+    color: white;
+    border-color: #ff6347;
+}
+
+/* Mahsulot kartasiga "Batafsil" tugmasi uchun */
+.batafsil-tugmasi {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+.batafsil-tugmasi:hover {
+    background-color: #f0f0f0;
+}
+
+/* Buyurtma formasi uchun uslublar (savat.html) */
+.buyurtma-formasi-bolimi {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+.buyurtma-formasi-bolimi h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.forma-gruppa {
+    margin-bottom: 20px;
+}
+.forma-gruppa label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.forma-gruppa input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ichki o'lchamni to'g'rilaydi */
+}
+
+/* Rasmiylashtirish tugmasi endi yashil */
+.rasmiylashtirish-tugmasi {
+    background-color: #2ecc71; /* Yashil rang */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.rasmiylashtirish-tugmasi:hover {
+    background-color: #27ae60;
+}
+
+/* =================================
+   "BIZ HAQIMIZDA" SAHIFASI UCHUN QO'shimcha USLUBLAR
+   ================================= */
+
+/* Mavjud matnli kontent uslubini biroz yaxshilaymiz */
+.matnli-kontent {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* 1. Qadriyatlar bo'limi */
+.qadriyatlar-bolimi {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 60px 0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.qadriyat-ustuni {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+.qadriyat-ustuni .ikonka {
+    font-size: 50px;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+.qadriyat-ustuni h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.qadriyat-ustuni p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 2. Rasm bloki */
+.rasm-bloki {
+    margin: 40px 0;
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.rasm-bloki img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 3. Jamoa bo'limi */
+.jamoa-bolimi {
+    text-align: center;
+    margin-top: 60px;
+}
+.jamoa-royxati {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.jamoa-azosi {
+    width: 200px;
+}
+.jamoa-azosi img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Rasm yumaloq bo'ladi */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.jamoa-azosi h4 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+.jamoa-azosi .lavozim {
+    color: #888;
+    font-weight: 500;
+}
+
+/* =================================
+   "ALOQA" SAHIFASI UCHUN QO'shimcha USLUBLAR
+   ================================= */
+
+/* Sahifani ikkiga bo'lish uchun asosiy konteyner */
+.aloqa-konteyneri {
+    display: flex;
+    gap: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    flex-wrap: wrap; /* Mobil qurilmalar uchun */
+}
+
+/* 1. Aloqa ma'lumotlari (chap taraf) */
+.aloqa-malumotlari {
+    flex-basis: 40%; /* Kenglik */
+    min-width: 300px;
+}
+.aloqa-malumotlari h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 10px;
+}
+.aloqa-elementi {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.aloqa-elementi .ikonka {
+    font-size: 28px;
+    color: #ff6347;
+    margin-right: 20px;
+    width: 40px; /* Ikonka uchun bir xil joy */
+}
+.aloqa-elementi p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.aloqa-elementi p strong {
+    display: block;
+    color: #333;
+}
+.aloqa-elementi p span {
+    color: #666;
+}
+
+/* 2. Qayta aloqa formasi (o'ng taraf) */
+.aloqa-formasi {
+    flex-basis: 60%; /* Kenglik */
+    min-width: 300px;
+}
+.aloqa-formasi h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+/* Mavjud forma uslublaridan foydalanamiz (.forma-gruppa) */
+/* Lekin textarea uchun alohida uslub */
+.forma-gruppa textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    min-height: 120px;
+    resize: vertical; /* Faqat vertikal o'zgartirish */
+}
+.yuborish-tugmasi {
+    width: 100%;
+    /* Mavjud .buyurtma-tugmasi uslubidan foydalanadi */
+}
+
+/* 3. Xarita bloki */
+.xarita-bloki {
+    margin-top: 60px;
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.xarita-bloki iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

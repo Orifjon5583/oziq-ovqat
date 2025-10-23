@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biz Haqimizda - Mazzali.uz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header qismi o'zgarishsiz qoladi -->
+    <header class="sayt-boshi">
+        <div class="konteyner">
+            <a href="index.html" class="logo">Mazzali.uz</a>
+            <nav class="menyu">
+                <ul>
+                    <li><a href="index.html">Bosh Sahifa</a></li>
+                    <li><a href="taomlar.html">Taomlar</a></li>
+                    <li><a href="haqimizda.html" class="aktiv">Biz haqimizda</a></li>
+                    <li><a href="aloqa.html">Aloqa</a></li>
+                    <li>
+                        <a href="savat.html" class="savat-ikonka">
+                            🛒 <span class="savat-soni" id="savat-soni">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Asosiy qism (Main) - YANGILANGAN -->
+    <main>
+        <div class="konteyner">
+            <h2 class="sahifa-sarlavhasi">Biz Haqimizda</h2>
+            <div class="matnli-kontent">
+                <p><strong>Mazzali.uz</strong> - bu shunchaki taom yetkazib berish xizmati emas. Biz sizning dasturxoningizga quvonch, mehr va O'zbekistonning eng sara taomlari lazzatini olib kirishni o'z oldimizga maqsad qilganmiz.</p>
+            </div>
+
+            <!-- YANGI: Qadriyatlar bo'limi -->
+            <div class="qadriyatlar-bolimi">
+                <div class="qadriyat-ustuni">
+                    <div class="ikonka">⭐</div>
+                    <h3>Yuqori Sifat</h3>
+                    <p>Har bir taomimiz faqat eng yangi va tabiiy mahsulotlardan, mehr bilan tayyorlanadi.</p>
+                </div>
+                <div class="qadriyat-ustuni">
+                    <div class="ikonka">🚀</div>
+                    <h3>Tezkor Yetkazish</h3>
+                    <p>Biz uchun sizning vaqtingiz qadrli. Buyurtmangizni imkon qadar tezroq yetkazamiz.</p>
+                </div>
+                <div class="qadriyat-ustuni">
+                    <div class="ikonka">❤️</div>
+                    <h3>Mijozlar G'amxo'rligi</h3>
+                    <p>Sizning mamnuniyatingiz - bizning asosiy yutug'imiz. Har bir mijozga alohida e'tibor.</p>
+                </div>
+            </div>
+
+            <!-- YANGI: Rasm bloki -->
+            <div class="rasm-bloki">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2787&auto=format&fit=crop" alt="Bizning oshpazlarimiz ish jarayonida">
+            </div>
+
+            <!-- YANGI: Jamoa bo'limi -->
+            <div class="jamoa-bolimi">
+                <h2 class="sahifa-sarlavhasi" style="padding-top: 0; margin-bottom: 20px;">Bizning Jamoamiz Bilan Tanishing</h2>
+                <div class="matnli-kontent" style="margin-bottom: 40px;">
+                    <p>Har bir buyurtma ortida o'z ishining ustalaridan iborat katta jamoa turadi.</p>
+                </div>
+                <div class="jamoa-royxati">
+                    <div class="jamoa-azosi">
+                        <img src="https://images.unsplash.com/photo-1532123675048-773bd75df1b4?q=80&w=2864&auto=format&fit=crop" alt="Bosh oshpaz">
+                        <h4>Azizbek Valiev</h4>
+                        <p class="lavozim">Bosh oshpaz</p>
+                    </div>
+                    <div class="jamoa-azosi">
+                        <img src="https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?q=80&w=2787&auto=format&fit=crop" alt="Menejer">
+                        <h4>Sevara Alimova</h4>
+                        <p class="lavozim">Mijozlar bilan ishlash menejeri</p>
+                    </div>
+                    <div class="jamoa-azosi">
+                        <img src="data:image/jpeg;base64,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" alt="Kuryer">
+                        <h4>Sardor Karimov</h4>
+                        <p class="lavozim">Yetkazib berish xizmati rahbari</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer qismi o'zgarishsiz qoladi -->
+    <footer class="sayt-quyi-qismi">
+        <div class="konteyner">
+            <p>&copy; 2025 Mazzali.uz. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
